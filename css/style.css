@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+.btn-primary {
+  color: #005fac;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 20px 25px;
+  border-radius: 5px;
+  background: #fff;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#header {
+  height: 100vh;
+  background-image: url("../img/banner3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+#header .container {
+  width: 40%;
+  position: absolute;
+  top: 160px;
+  right: 150px;
+  text-align: right;
+}
+#header .container h1 {
+  color: #fff;
+  text-align: right;
+  font-size: 65px;
+  font-weight: 700;
+}
+#header .container p {
+  color: #fff;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 20px;
+  width: 90%;
+  margin-left: 10%;
+}
+#header .container .btn-primary {
+  margin-top: 30px;
+  position: relative;
+  z-index: 1;
+}
+#header .btn-primary span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #2129309d;
+  border-radius: 4px;
+  transition: 0.5s;
+  z-index: -1;
+}
+#header .btn-primary:hover span {
+  width: 100%;
+  color: #fff;
+}
+#header .btn-primary:hover {
+  color: #fff;
+}
+
+/* failure section  */
+
+#failure {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 140px 150px;
+}
+#failure ul {
+  margin-top: 15px;
+}
+#failure ul li {
+  list-style: none;
+  color: #444343;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 8px;
+}
+.failure-right {
+  margin-left: 130px;
+}
+.failure-right .fa-check {
+  color: #16d887;
+  margin-right: 10px;
+}
+.failure-left img {
+  width: 450px;
+}
+.failure-right h2 {
+  color: var(--dark-01, #151414);
+  font-size: 40px;
+  font-weight: 700;
+}
+.failure-right p {
+  color: #444343;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 24px;
+}
